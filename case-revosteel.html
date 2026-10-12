@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="it" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RevoSteel Building · Caso studio · Laura Preti</title>
+<meta name="description" content="Case study: sito istituzionale e configuratore per RevoSteel Building, case in acciaio CFS. Layout e front-end in Bootstrap, cresciuti per step in circa tre anni.">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="theme-color" content="#3D1466">
+
+<!-- Anteprima social
+     [SEGNAPOSTO]: sostituisci https://laurapreti.github.io/portfolio con l'indirizzo vero del sito.
+     Quando avrai gli screen, puoi usare un'immagine dedicata al progetto al posto di og-image.png. -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Laura Preti — Design & Code">
+<meta property="og:title" content="RevoSteel Building · Case study">
+<meta property="og:description" content="Case study: sito istituzionale e configuratore per RevoSteel Building, case in acciaio CFS. Layout e front-end in Bootstrap, cresciuti per step in circa tre anni.">
+<meta property="og:url" content="https://laurapreti.github.io/portfolio/case-revosteel.html">
+<meta property="og:image" content="https://laurapreti.github.io/portfolio/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/9b4d0a581f.js" crossorigin="anonymous"></script>
+
+<!-- Stili comuni a tutte le pagine: si modificano in css/input.css (npm run dev rigenera output.css) -->
+<link rel="stylesheet" href="css/output.css">
+
+<meta name="robots" content="noindex, nofollow">
+</head>
+
+<body class="font-sans antialiased leading-relaxed">
+
+<!-- Barra di navigazione -->
+<header class="sticky top-0 z-20 backdrop-blur-xs after:absolute after:h-0.5 after:w-full after:bottom-0 after:bg-linear-to-r after:from-glight after:to-gdark" style="top: env(safe-area-inset-top, 0px); background: color-mix(in srgb, var(--paper) 82%, transparent);">
+  <nav class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img src="logo/kit/logo-badge-orizzontale.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-light h-16 w-auto">
+      <img src="logo/kit/logo-badge-orizzontale-negativo.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-dark h-16 w-auto">
+    </a>
+    <div class="flex items-center gap-3 nav:gap-6">
+      <div class="hidden nav:flex items-center gap-7 text-sm text-muted" data-menu-links>
+        <a href="index.html#lavori" class="text-ink font-medium" aria-current="page">Lavori</a>
+        <a href="index.html#profilo" class="hover:text-ink transition-colors">Profilo</a>
+        <a href="index.html#competenze" class="hover:text-ink transition-colors">Competenze</a>
+        <a href="cv.html" class="hover:text-ink transition-colors">CV</a>
+        <a href="#contatto" class="hover:text-ink transition-colors">Contatti</a>
+      </div>
+      <!-- Interruttore tema chiaro/scuro -->
+      <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Tema scuro" title="Cambia tema">
+        <span class="theme-toggle__knob" aria-hidden="true"></span>
+        <i class="theme-toggle__icon theme-toggle__sun text-xs fa-solid fa-sun"></i>
+        <i class="theme-toggle__icon theme-toggle__moon text-xs fa-solid fa-moon"></i>
+      </button>
+      
+      <button type="button" class="menu-toggle nav:hidden" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+        <span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero-hex flow-root pt-14 md:pt-20">
+    <div class="mx-auto max-w-5xl px-6">
+      <a href="index.html#lavori" class="rise rise-1 inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors mb-10">
+        <i class="w-4 h-4 icon-line fa-solid fa-arrow-left"></i>Tutti i lavori
+      </a>
+      <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; caso_studio /&gt;</p>
+      <h1 class="rise rise-2 font-display leading-[1.05] tracking-[-0.01em] font-extralight"
+          style="font-size: clamp(2.4rem, 7vw, 4.4rem);">
+        RevoSteel <em class="font-normal">Building</em>
+      </h1>
+      <p class="rise rise-3 mt-8 max-w-2xl text-lg text-muted">
+        Il sito istituzionale e il configuratore di RevoSteel Building, impresa di costruzioni che realizza case in acciaio CFS, cresciuti per step nel corso di circa tre anni di collaborazione.
+      </p>
+      <div class="rise rise-4 mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+        <a href="https://www.revosteelbuilding.com" target="_blank" rel="noopener"
+          class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
+          Visita il sito
+          <i class="w-4 h-4 icon-line fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <span class="text-muted">2023&ndash;2026 &middot; Sito &amp; configuratore &middot; Bootstrap 5</span>
+      </div>
+      
+      <img src="img/revosteel/mockup-revosteel.png" alt="Revosteel Building" width="1600" height="853" class="rise rise-4 mt-12 md:mt-16 -mb-24 md:-mb-40 rounded-2xl w-full h-auto">
+    </div>
+  </section>
+  
+  <section class="pt-40 pb-16 md:pt-64 md:pb-24 bg-card">
+    <div class="mx-auto max-w-5xl px-6">
+      <dl class="divide-y divide-line border-y border-line">
+        <div class="py-4 grid gap-1 sm:grid-cols-[12rem_1fr] sm:gap-6">
+          <dt class="text-sm text-muted">Cliente</dt>
+          <dd>RevoSteel Building S.p.A., costruzioni in acciaio CFS</dd>
+        </div>
+        <div class="py-4 grid gap-1 sm:grid-cols-[12rem_1fr] sm:gap-6">
+          <dt class="text-sm text-muted">Progetto</dt>
+          <dd>Sito istituzionale, catalogo case, sezioni per privati e professionisti, configuratore</dd>
+        </div>
+        <div class="py-4 grid gap-1 sm:grid-cols-[12rem_1fr] sm:gap-6">
+          <dt class="text-sm text-muted">Link</dt>
+          <dd><a href="https://www.revosteelbuilding.com" class="link" target="_blank" rel="noopener">revosteelbuilding.com</a></dd>
+        </div>
+        <div class="py-4 grid gap-1 sm:grid-cols-[12rem_1fr] sm:gap-6">
+          <dt class="text-sm text-muted">Lingue</dt>
+          <dd>Italiano, inglese</dd>
+        </div>
+        <div class="py-4 grid gap-1 sm:grid-cols-[12rem_1fr] sm:gap-6">
+          <dt class="text-sm text-muted">Realizzato per</dt>
+          <dd>Italia Multimedia S.r.l.</dd>
+        </div>
+        <div class="py-4 grid gap-1 sm:grid-cols-[12rem_1fr] sm:gap-6 sm:items-center">
+          <dt class="text-sm text-muted">Tecnologie</dt>
+          <dd>
+            <ul class="flex flex-wrap gap-2 text-sm">
+              <li class="rounded-full bg-accent/10 text-accent px-3 py-1 font-semibold">HTML5</li>
+              <li class="rounded-full bg-accent/10 text-accent px-3 py-1 font-semibold">CSS3</li>
+              <li class="rounded-full bg-accent/10 text-accent px-3 py-1 font-semibold">Bootstrap 5</li>
+              <li class="rounded-full bg-accent/10 text-accent px-3 py-1 font-semibold">Template personalizzato</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- RICHIESTA E MIO RUOLO -->
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-5 md:grid-cols-[1fr_1.6fr]">
+        <div class="md:sticky md:top-24 md:self-start mb-6 md:mb-0">
+          <p class="font-display text-accent text-5xl mb-5 font-extralight">01</p>
+          <h2 class="font-display text-3xl sm:text-4xl font-normal">Richiesta e mio ruolo</h2>
+          <p class="mt-6 text-sm text-muted max-w-xs">Tempi iniziali molto stretti: il sito è partito con le sezioni essenziali ed è cresciuto per step.</p>
+        </div>
+        <div class="space-y-5 max-w-2xl">
+          <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
+            <p class="text-sm text-accent mb-6 font-semibold">&lt; la_richiesta /&gt;</p>
+            <p>RevoSteel aveva bisogno di presentare un'offerta complessa (tecnologia costruttiva, catalogo di sette modelli di casa, servizi per privati e per imprese) e di far calcolare ai visitatori l'investimento con un configuratore. I tempi iniziali erano molto stretti, per cui il sito è partito con le sezioni essenziali ed è stato ampliato per step.</p>
+          </div>
+          <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
+            <p class="text-sm text-accent mb-6 font-semibold">&lt; il_mio_ruolo /&gt;</p>
+            <ul class="skill-list space-y-4">
+              <li><i class="skill-icon icon-line fa-solid fa-display"></i><span>Layout e front-end di tutto il sito: scelta del look and feel, composizione delle pagine, versione responsive.</span></li>
+              <li><i class="skill-icon icon-line fa-solid fa-wrench"></i><span>Layout e interfaccia del configuratore.</span></li>
+              <li><i class="skill-icon icon-line fa-solid fa-comments"></i><span>Gestione continua dei feedback del cliente, dalla prima versione agli ampliamenti successivi.</span></li>
+            </ul>
+            <p class="mt-6 pt-5 border-t border-line text-sm text-muted">La parte funzionale e il back-end (compresa la logica del configuratore) sono stati sviluppati dai colleghi sviluppatori.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="pb-16 md:pb-24">
+    <div class="mx-auto max-w-5xl px-6">
+      <img src="img/revosteel/mockup-revosteel-catalogo.png" alt="RevoSteel Building - Catalogo" width="1600" height="853" class="rise rise-4 w-full h-auto">
+    </div>
+  </section>
+
+  <!-- METODO DI LAVORO -->
+  <section class="py-16 md:py-24 bg-card">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-5 md:grid-cols-[1fr_1.6fr]">
+        <div class="md:sticky md:top-24 md:self-start mb-6 md:mb-0">
+          <p class="font-display text-accent text-5xl mb-5 font-extralight">02</p>
+          <h2 class="font-display text-3xl sm:text-4xl font-normal">Metodo di lavoro</h2>
+        </div>
+        <div class="space-y-5 max-w-2xl">
+          <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
+            <div class="skill-head mb-4">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-magnifying-glass"></i></span>
+              <h3 class="font-display text-xl font-medium">Ricerca del look and feel</h3>
+            </div>
+            <p class="text-muted">Per ogni progetto parto da una lunga fase di ricerca tra template Bootstrap 5, per trovare una base già vicina alle esigenze e al settore del cliente. Il template non viene mai riutilizzato da un progetto all'altro.</p>
+          </article>
+          <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
+            <div class="skill-head mb-4">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
+              <h3 class="font-display text-xl font-medium">Costruzione delle pagine</h3>
+            </div>
+            <p class="text-muted">Lavoro direttamente sul codice e compongo tutte le pagine necessarie, adattando struttura, componenti e stile all'identità del cliente.</p>
+          </article>
+          <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
+            <div class="skill-head mb-4">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-comments"></i></span>
+              <h3 class="font-display text-xl font-medium">Feedback continuo</h3>
+            </div>
+            <p class="text-muted">Mostro al cliente ogni avanzamento e implemento le sue correzioni durante il lavoro, senza aspettare una consegna finale.</p>
+          </article>
+          <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
+            <div class="skill-head mb-4">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-layer-group"></i></span>
+              <h3 class="font-display text-xl font-medium">Ampliamento per step</h3>
+            </div>
+            <p class="text-muted">Dopo la prima pubblicazione, il sito è cresciuto con nuove sezioni (case history, divisione area per imprese e professionisti, progettatore, modello all inclusive) mantenendo coerenza grafica.</p>
+          </article>
+          <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
+            <div class="skill-head mb-4">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-language"></i></span>
+              <h3 class="font-display text-xl font-medium">Traduzioni</h3>
+            </div>
+            <p class="text-muted">Ho usato l'AI come supporto per la versione inglese dei contenuti.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-5xl px-6 space-y-5">
+      <a href="img/revosteel/screen-revosteel_1600x1000.jpg" data-lightbox="revosteel" class="lightbox-thumb">
+        <img src="img/revosteel/screen-revosteel_1600x1000.jpg" alt="RevoSteel Building — All Inclusive desktop" width="1600" height="1000" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+      </a>
+      <div class="grid gap-5 grid-cols-2 md:grid-cols-4">
+        <a href="img/revosteel/screen-revosteel-all-inclusive_778x1684.jpg" data-lightbox="revosteel" class="lightbox-thumb">
+          <img src="img/revosteel/screen-revosteel-all-inclusive_778x1684.jpg" alt="RevoSteel Building — All Inclusive mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+        </a>
+        <a href="img/revosteel/screen-revosteel-estetica_778x1684.jpg" data-lightbox="revosteel" class="lightbox-thumb">
+          <img src="img/revosteel/screen-revosteel-estetica_778x1684.jpg" alt="RevoSteel Building — Estetica mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+        </a>
+        <a href="img/revosteel/screen-revosteel-finanziamenti_778x1684.jpg" data-lightbox="revosteel" class="lightbox-thumb">
+          <img src="img/revosteel/screen-revosteel-finanziamenti_778x1684.jpg" alt="RevoSteel Building — Finanziamenti mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+        </a>
+        <a href="img/revosteel/screen-revosteel-chi-siamo_778x1684.jpg" data-lightbox="revosteel" class="lightbox-thumb">
+          <img src="img/revosteel/screen-revosteel-chi-siamo_778x1684.jpg" alt="RevoSteel Building — Chi Siamo mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RISULTATO -->
+  <section class="py-16 md:py-24 bg-card">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-10 md:grid-cols-[1fr_1.6fr]">
+        <div class="mb-6 md:mb-0">
+          <p class="font-display text-accent text-5xl mb-5 font-extralight">03</p>
+          <h2 class="font-display text-3xl sm:text-4xl font-normal">Risultato</h2>
+        </div>
+        <div class="space-y-5 max-w-2xl">
+          <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
+            <p class="text-sm text-accent mb-6 font-semibold">&lt; risultato /&gt;</p>
+            <p>Il rapporto con il cliente è proseguito per circa tre anni, con nuove sezioni aggiunte progressivamente: un segnale concreto di fiducia nel lavoro svolto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROSSIMO CASO -->
+  <section class="py-16 md:py-20">
+    <div class="mx-auto max-w-5xl px-6">
+      <a href="case-due-emme.html" class="group flex items-center justify-between gap-6 border-l-2 border-accent py-8 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
+        <span>
+          <span class="block text-sm text-accent mb-2 font-semibold">&lt; prossimo_caso /&gt;</span>
+          <span class="font-display text-2xl sm:text-3xl font-normal">Due Emme (2M)</span>
+        </span>
+        <i class="w-8 h-8 shrink-0 text-2xl icon-line text-accent transition-transform group-hover:translate-x-1 fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTATTO -->
+  <section id="contatto" class="contact-hex mt-0 pb-16 md:-mt-20 md:pt-30 md:pb-24">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-8 sm:grid-cols-[1fr_1.6fr] sm:items-end">
+        <h2 class="font-display leading-tight" style="font-weight:300; font-size: clamp(2rem, 6vw, 3.5rem);">
+          Parliamone.
+        </h2>
+        <div class="space-y-4 text-lg">
+          <p class="text-muted max-w-lg">
+            Cerco un ruolo come front-end / UI developer, in sede e ibrido a Milano, o da remoto in tutta Italia.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-2">
+            <a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a>
+            <a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a>
+            <a href="[link-github]" class="link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="relative after:absolute after:h-0.5 after:w-full after:top-0 after:bg-linear-to-r after:from-glight after:to-gdark">
+  <div class="mx-auto max-w-5xl px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
+    <span>&copy; 2026 Laura Preti</span>
+    <span>Costruito con HTML e Tailwind CSS</span>
+  </div>
+</footer>
+
+<!-- Interruttore tema: il predefinito è scuro (data-theme="dark" su <html>); la scelta del visitatore viene ricordata -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.querySelector('.theme-toggle');
+    if (!btn) return;
+    function isDark() { return root.dataset.theme !== 'light'; }
+    function sync() { btn.setAttribute('aria-checked', isDark() ? 'true' : 'false'); }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+    });
+    sync();
+  })();
+</script>
+<!-- Lightbox della galleria screen -->
+<script src="js/lightbox.js" defer></script>
+<!-- Menu mobile -->
+<script src="js/menu.js" defer></script>
+</body>
+</html>

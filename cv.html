@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="it" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Curriculum · Laura Preti — Front-end Developer &amp; Web Designer</title>
+<meta name="description" content="Curriculum di Laura Preti: web designer e front-end developer con 12 anni di esperienza in agenzia, HTML, CSS, Bootstrap e Tailwind CSS.">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="theme-color" content="#3D1466">
+
+<!-- Anteprima social — [SEGNAPOSTO]: sostituisci https://laurapreti.github.io/portfolio con l'indirizzo vero del sito -->
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Laura Preti — Design & Code">
+<meta property="og:title" content="Curriculum · Laura Preti">
+<meta property="og:description" content="Web designer e front-end developer con 12 anni di esperienza in agenzia.">
+<meta property="og:url" content="https://laurapreti.github.io/portfolio/cv.html">
+<meta property="og:image" content="https://laurapreti.github.io/portfolio/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/9b4d0a581f.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/output.css">
+
+<meta name="robots" content="noindex, nofollow">
+</head>
+
+<body class="font-sans antialiased leading-relaxed">
+
+<!-- Barra di navigazione (non stampata) -->
+<header class="print:hidden sticky top-0 z-20 backdrop-blur-xs after:absolute after:h-0.5 after:w-full after:bottom-0 after:bg-linear-to-r after:from-glight after:to-gdark" style="top: env(safe-area-inset-top, 0px); background: color-mix(in srgb, var(--paper) 82%, transparent);">
+  <nav class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img src="logo/kit/logo-badge-orizzontale.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-light h-16 w-auto">
+      <img src="logo/kit/logo-badge-orizzontale-negativo.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-dark h-16 w-auto">
+    </a>
+    <div class="flex items-center gap-3 nav:gap-6">
+      <div class="hidden nav:flex items-center gap-7 text-sm text-muted" data-menu-links>
+        <a href="index.html#lavori" class="hover:text-ink transition-colors">Lavori</a>
+        <a href="index.html#profilo" class="hover:text-ink transition-colors">Profilo</a>
+        <a href="index.html#competenze" class="hover:text-ink transition-colors">Competenze</a>
+        <a href="cv.html" class="text-ink font-medium" aria-current="page">CV</a>
+        <a href="#contatto" class="hover:text-ink transition-colors">Contatti</a>
+      </div>
+      <!-- Interruttore tema chiaro/scuro -->
+      <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Tema scuro" title="Cambia tema">
+        <span class="theme-toggle__knob" aria-hidden="true"></span>
+        <i class="theme-toggle__icon theme-toggle__sun text-xs fa-solid fa-sun"></i>
+        <i class="theme-toggle__icon theme-toggle__moon text-xs fa-solid fa-moon"></i>
+      </button>
+      
+      <button type="button" class="menu-toggle nav:hidden" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+        <span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  
+  <section class="hero-hex pt-14 pb-16 md:pt-20 md:pb-20 print:p-0 print:pb-5 print:border-b-2 print:border-accent">
+    <div class="mx-auto max-w-5xl px-6 print:px-0 print:flex print:items-center print:gap-6">
+      <!-- Badge del logo: solo in stampa -->
+      <img src="logo/kit/badge.svg" alt="" width="120" height="120" class="hidden print:block w-20 h-20 shrink-0">
+      <div class="print:flex-1">
+        <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold print:hidden">&lt; curriculum_vitae /&gt;</p>
+        <h1 class="rise rise-2 font-display leading-[1.05] tracking-[-0.01em] font-extralight print:text-[26pt]"
+            style="font-size: clamp(2.6rem, 8vw, 4.8rem);">
+          Laura <em class="font-normal">Preti</em>
+        </h1>
+        <p class="rise rise-3 mt-4 text-lg text-accent font-semibold print:mt-1 print:text-[11pt]">Front-end Developer &middot; Web Designer</p>
+        <!-- Contatti -->
+        <ul class="rise rise-3 mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted print:mt-2 print:text-[8.5pt] print:gap-x-4">
+          <li>Milano</li>
+          <li><a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a></li>
+        </ul>
+      </div>
+      <!-- Pulsanti: solo a schermo -->
+      <div class="rise rise-4 mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm print:hidden">
+        <a href="cv-laura-preti.pdf" download
+          class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
+          Scarica il CV in PDF
+          <i class="w-4 h-4 icon-line fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPO DEL CV: colonna laterale + colonna principale (anche in stampa) -->
+  <div class="mx-auto max-w-5xl px-6 py-16 md:py-24 grid gap-14 md:grid-cols-[1fr_2fr] md:gap-12
+              print:px-0 print:py-0 print:pt-6 print:grid-cols-[30%_1fr] print:gap-8">
+
+    <!-- COLONNA LATERALE -->
+    <aside class="space-y-12 md:sticky md:top-24 md:self-start print:static print:space-y-6 print:border-r print:border-line print:pr-6">
+
+      <section aria-labelledby="t-competenze">
+        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; competenze /&gt;</p>
+        <h2 id="t-competenze" class="mt-2 mb-6 font-display text-2xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Competenze</h2>
+        <div class="space-y-6 print:space-y-3">
+          <div class="cv-skill">
+            <div class="skill-head mb-3 print:mb-1.5">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
+              <h3 class="text-sm font-semibold">Front-end</h3>
+            </div>
+            <ul class="cv-chips">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Flexbox & Grid</li>
+              <li>Responsive design</li>
+              <li>Bootstrap 3/4/5</li>
+              <li>Tailwind CSS</li>
+              <li>PHP · base</li>
+            </ul>
+          </div>
+          <div class="cv-skill">
+            <div class="skill-head mb-3 print:mb-1.5">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-pen-nib"></i></span>
+              <h3 class="text-sm font-semibold">Design</h3>
+            </div>
+            <ul class="cv-chips">
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>InDesign</li>
+              <li>Figma (auto layout, componenti, Dev Mode)</li>
+            </ul>
+          </div>
+          <div class="cv-skill">
+            <div class="skill-head mb-3 print:mb-1.5">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-terminal"></i></span>
+              <h3 class="text-sm font-semibold">Scripting</h3>
+            </div>
+            <ul class="cv-chips"><li>JavaScript · base</li></ul>
+          </div>
+          <div class="cv-skill">
+            <div class="skill-head mb-3 print:mb-1.5">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-wrench"></i></span>
+              <h3 class="text-sm font-semibold">Strumenti</h3>
+            </div>
+            <ul class="cv-chips">
+              <li>Visual Studio Code</li>
+              <li>Claude Code</li>
+              <li>Cowork</li>
+              <li>ChatGPT</li>
+              <li>Gemini</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </div>
+          <div class="cv-skill">
+            <div class="skill-head mb-3 print:mb-1.5">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-user-pen"></i></span>
+              <h3 class="text-sm font-semibold">Metodo</h3>
+            </div>
+            <ul class="cv-chips">
+              <li>Design-to-code</li>
+              <li>Cura dei dettagli visivi</li>
+              <li>Collaborazione con sviluppatori</li>
+              <li>AI a supporto del codice</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="t-lingue">
+        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; lingue /&gt;</p>
+        <h2 id="t-lingue" class="mt-2 mb-6 font-display text-2xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Lingue</h2>
+        <!-- --livello: lunghezza della barra (100% madrelingua, C1 ≈ 83%, B2 ≈ 66%) -->
+        <dl class="space-y-4 print:space-y-2.5">
+          <div class="cv-lang" style="--livello: 100%"><dt>Italiano</dt><dd>Madrelingua</dd></div>
+          <div class="cv-lang" style="--livello: 83%"><dt>Inglese</dt><dd>C1 &middot; certificato EF SET 65/100, 2026</dd></div>
+          <div class="cv-lang" style="--livello: 66%"><dt>Spagnolo</dt><dd>B2</dd></div>
+        </dl>
+      </section>
+    </aside>
+
+    <!-- COLONNA PRINCIPALE -->
+    <div class="space-y-16 print:space-y-6">
+
+      <section aria-labelledby="t-profilo">
+        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; profilo /&gt;</p>
+        <h2 id="t-profilo" class="mt-2 mb-6 font-display text-3xl font-normal print:text-[13pt] print:mb-2 print:mt-0.5">Profilo</h2>
+        <p class="text-lg print:text-[9pt]">
+          Front-end Developer e Web Designer con 12 anni di esperienza in agenzia. Trasformo progetti grafici in siti responsive, accessibili e facili da mantenere, unendo competenze di design e sviluppo front-end.
+        </p>
+        <p class="mt-4 text-muted print:mt-2 print:text-[9pt]">
+          Lavoro principalmente con HTML, CSS, Bootstrap e Tailwind CSS, con una solida formazione in graphic design e art direction. Ho realizzato siti aziendali, e-commerce e landing page, collaborando con sviluppatori, SEO specialist e project manager.
+        </p>
+        <p class="mt-4 text-muted print:mt-2 print:text-[9pt]">
+          Utilizzo strumenti di AI come supporto allo sviluppo, mantenendo il controllo sul codice e curandone personalmente rifinitura e qualità.
+        </p>
+        <!-- Numeri chiave -->
+        <dl class="mt-8 grid grid-cols-3 gap-4 print:mt-3 print:gap-3">
+          <div class="border-l-2 border-accent pl-4 print:pl-3">
+            <dt class="font-display text-4xl text-accent font-normal print:text-[18pt]">12+</dt>
+            <dd class="text-sm text-muted print:text-[8pt]">anni in agenzia</dd>
+          </div>
+          <div class="border-l-2 border-accent pl-4 print:pl-3">
+            <dt class="font-display text-4xl text-accent font-normal print:text-[18pt]">100+</dt>
+            <dd class="text-sm text-muted print:text-[8pt]">progetti consegnati</dd>
+          </div>
+          <div class="border-l-2 border-accent pl-4 print:pl-3">
+            <dt class="font-display text-4xl text-accent font-normal print:text-[18pt]">107<small class="text-muted text-xl print:text-[10pt]">/110</small></dt>
+            <dd class="text-sm text-muted print:text-[8pt]">NABA, Graphic Design</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="t-esperienza">
+        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; esperienza /&gt;</p>
+        <h2 id="t-esperienza" class="mt-2 mb-8 font-display text-3xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Esperienza professionale</h2>
+        <!-- Timeline: linea verticale col gradiente + pallino per ogni ruolo -->
+        <ol class="cv-timeline space-y-10 print:space-y-4">
+          <li class="cv-timeline__item">
+            <p class="text-sm text-muted print:text-[8pt]">Gennaio 2015 – Novembre 2026</p>
+            <h3 class="mt-1 font-display text-xl font-medium print:text-[11pt] print:mt-0">Senior Web Designer</h3>
+            <p class="text-sm text-accent font-semibold print:text-[8.5pt]">Italia Multimedia S.r.l.</p>
+            <ul class="cv-bullets mt-4 print:mt-1.5">
+              <li>Sviluppo front-end di siti web ed e-commerce a partire dai progetti grafici, con HTML, CSS, Bootstrap e Tailwind CSS.</li>
+              <li>Oltre <strong>100 progetti consegnati</strong> in 12 anni: siti vetrina, cataloghi, e-commerce e landing page.</li>
+              <li>Figura di riferimento per il design dell’agenzia: per lungo tempo unica risorsa grafica interna, responsabile della componente visiva dei progetti.</li>
+              <li>Introduzione di <strong>Tailwind CSS</strong> nei progetti più recenti per velocizzare e ottimizzare lo sviluppo.</li>
+              <li>Collaborazione con sviluppatori, SEO specialist e project manager su tempi di consegna, performance, usabilità e accessibilità.</li>
+              <li>Formazione e affiancamento di una stagista nel ruolo di Web Designer.</li>
+            </ul>
+          </li>
+          <li class="cv-timeline__item">
+            <p class="text-sm text-muted print:text-[8pt]">Luglio 2014 – Gennaio 2015</p>
+            <h3 class="mt-1 font-display text-xl font-medium print:text-[11pt] print:mt-0">Web Designer (stage)</h3>
+            <p class="text-sm text-accent font-semibold print:text-[8.5pt]">Italia Multimedia S.r.l.</p>
+            <ul class="cv-bullets mt-4 print:mt-1.5">
+              <li>Supporto alla realizzazione di siti web e materiali grafici digitali.</li>
+              <li>Assunzione a tempo indeterminato al termine dello stage.</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="t-formazione">
+        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; formazione /&gt;</p>
+        <h2 id="t-formazione" class="mt-2 mb-8 font-display text-3xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Formazione</h2>
+        <ol class="cv-timeline space-y-8 print:space-y-3">
+          <li class="cv-timeline__item">
+            <p class="text-sm text-muted print:text-[8pt]">2026</p>
+            <h3 class="mt-1 font-display text-lg font-medium print:text-[10pt] print:mt-0">Corsi online su Learnn</h3>
+            <p class="mt-1 text-muted print:text-[8.5pt] print:mt-0.5">Figma Basics, UI Design, Design System, Web Design con Webflow, JavaScript, AI da Zero, Claude Chat &amp; Cowork</p>
+          </li>
+          <li class="cv-timeline__item">
+            <p class="text-sm text-muted print:text-[8pt]">2014</p>
+            <h3 class="mt-1 font-display text-lg font-medium print:text-[10pt] print:mt-0">Diploma Accademico di I livello in Graphic Design &amp; Art Direction</h3>
+            <p class="mt-1 text-muted print:text-[8.5pt] print:mt-0.5">NABA &middot; voto 107/110 (equipollente a laurea triennale)</p>
+          </li>
+          <li class="cv-timeline__item">
+            <p class="text-sm text-muted print:text-[8pt]">2010</p>
+            <h3 class="mt-1 font-display text-lg font-medium print:text-[10pt] print:mt-0">Diploma in Ragioneria</h3>
+            <p class="mt-1 text-muted print:text-[8.5pt] print:mt-0.5">ITC Nicola Moreschi</p>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </div>
+
+  <!-- CONTATTO (non stampato) -->
+  <section id="contatto" class="contact-hex py-16 sm:py-24 print:hidden">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-8 sm:grid-cols-[1fr_1.6fr] sm:items-end">
+        <h2 class="font-display leading-tight" style="font-weight:300; font-size: clamp(2rem, 6vw, 3.5rem);">
+          Parliamone.
+        </h2>
+        <div class="space-y-4 text-lg">
+          <p class="text-muted max-w-lg">
+            Cerco un ruolo come front-end / UI developer, in sede e ibrido a Milano, o da remoto in tutta Italia.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-2">
+            <a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a>
+            <a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a>
+            <a href="[link-github]" class="link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="print:hidden relative after:absolute after:h-0.5 after:w-full after:top-0 after:bg-linear-to-r after:from-glight after:to-gdark">
+  <div class="mx-auto max-w-5xl px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
+    <span>&copy; 2026 Laura Preti</span>
+    <span>Costruito con HTML e Tailwind CSS</span>
+  </div>
+</footer>
+
+<!-- Interruttore tema: il predefinito è scuro (data-theme="dark" su <html>); la scelta del visitatore viene ricordata -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.querySelector('.theme-toggle');
+    if (!btn) return;
+    function isDark() { return root.dataset.theme !== 'light'; }
+    function sync() { btn.setAttribute('aria-checked', isDark() ? 'true' : 'false'); }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+    });
+    sync();
+  })();
+</script>
+<!-- Menu mobile -->
+<script src="js/menu.js" defer></script>
+</body>
+</html>
