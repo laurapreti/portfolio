@@ -18,7 +18,7 @@
 <link rel="manifest" href="favicon/site.webmanifest">
 <meta name="theme-color" content="#3D1466">
 
-<!-- Anteprima social — [SEGNAPOSTO]: sostituisci https://laurapreti.github.io/portfolio con l'indirizzo vero del sito -->
+<!-- Anteprima social — [SEGNAPOSTO]: sostituisci https://[DOMINIO] con l'indirizzo vero del sito -->
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Laura Preti — Design & Code">
@@ -43,8 +43,8 @@
 
 <body class="font-sans antialiased leading-relaxed">
 
-<!-- Barra di navigazione (non stampata) -->
-<header class="print:hidden sticky top-0 z-20 backdrop-blur-xs after:absolute after:h-0.5 after:w-full after:bottom-0 after:bg-linear-to-r after:from-glight after:to-gdark" style="top: env(safe-area-inset-top, 0px); background: color-mix(in srgb, var(--paper) 82%, transparent);">
+<!-- Barra di navigazione -->
+<header class="sticky top-0 z-20 backdrop-blur-xs after:absolute after:h-0.5 after:w-full after:bottom-0 after:bg-linear-to-r after:from-glight after:to-gdark" style="top: env(safe-area-inset-top, 0px); background: color-mix(in srgb, var(--paper) 82%, transparent);">
   <nav class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
     <a href="index.html" class="flex items-center shrink-0">
       <img src="logo/kit/logo-badge-orizzontale.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-light h-16 w-auto">
@@ -74,26 +74,25 @@
 
 <main id="top">
   
-  <section class="hero-hex pt-14 pb-16 md:pt-20 md:pb-20 print:p-0 print:pb-5 print:border-b-2 print:border-accent">
-    <div class="mx-auto max-w-5xl px-6 print:px-0 print:flex print:items-center print:gap-6">
-      <!-- Badge del logo: solo in stampa -->
-      <img src="logo/kit/badge.svg" alt="" width="120" height="120" class="hidden print:block w-20 h-20 shrink-0">
-      <div class="print:flex-1">
-        <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold print:hidden">&lt; curriculum_vitae /&gt;</p>
-        <h1 class="rise rise-2 font-display leading-[1.05] tracking-[-0.01em] font-extralight print:text-[26pt]"
+  <section class="hero-hex py-10 md:pt-20 md:pb-20">
+    <div class="mx-auto max-w-5xl px-6">
+      <div>
+        <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; curriculum_vitae /&gt;</p>
+        <h1 class="rise rise-2 font-display leading-[1.05] tracking-[-0.01em] font-extralight"
             style="font-size: clamp(2.6rem, 8vw, 4.8rem);">
           Laura <em class="font-normal">Preti</em>
         </h1>
-        <p class="rise rise-3 mt-4 text-lg text-accent font-semibold print:mt-1 print:text-[11pt]">Front-end Developer &middot; Web Designer</p>
+        <p class="rise rise-3 mt-4 text-lg text-accent font-semibold">Front-end Developer &middot; Web Designer</p>
         <!-- Contatti -->
-        <ul class="rise rise-3 mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted print:mt-2 print:text-[8.5pt] print:gap-x-4">
+        <ul class="rise rise-3 mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
           <li>Milano</li>
           <li><a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a></li>
           <li><a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a></li>
+          <li><a href="https://laurapreti.github.io/portfolio/" class="link">GitHub</a></li>
         </ul>
       </div>
-      <!-- Pulsanti: solo a schermo -->
-      <div class="rise rise-4 mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm print:hidden">
+      <!-- Download del CV: il PDF è curato a parte in InDesign (cv-indesign/) -->
+      <div class="rise rise-4 mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
         <a href="cv-laura-preti.pdf" download
           class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
           Scarica il CV in PDF
@@ -103,19 +102,18 @@
     </div>
   </section>
 
-  <!-- CORPO DEL CV: colonna laterale + colonna principale (anche in stampa) -->
-  <div class="mx-auto max-w-5xl px-6 py-16 md:py-24 grid gap-14 md:grid-cols-[1fr_2fr] md:gap-12
-              print:px-0 print:py-0 print:pt-6 print:grid-cols-[30%_1fr] print:gap-8">
+  <!-- CORPO DEL CV: colonna laterale + colonna principale -->
+  <div class="mx-auto max-w-5xl px-6 py-10 md:py-24 grid gap-14 md:grid-cols-[1fr_2fr] md:gap-12">
 
     <!-- COLONNA LATERALE -->
-    <aside class="space-y-12 md:sticky md:top-24 md:self-start print:static print:space-y-6 print:border-r print:border-line print:pr-6">
+    <aside class="space-y-12 md:sticky md:top-24 md:self-start">
 
       <section aria-labelledby="t-competenze">
-        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; competenze /&gt;</p>
-        <h2 id="t-competenze" class="mt-2 mb-6 font-display text-2xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Competenze</h2>
-        <div class="space-y-6 print:space-y-3">
+        <p class="text-sm text-accent font-semibold">&lt; competenze /&gt;</p>
+        <h2 id="t-competenze" class="mt-2 mb-6 font-display text-2xl font-normal">Competenze</h2>
+        <div class="space-y-6">
           <div class="cv-skill">
-            <div class="skill-head mb-3 print:mb-1.5">
+            <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
               <h3 class="text-sm font-semibold">Front-end</h3>
             </div>
@@ -130,7 +128,7 @@
             </ul>
           </div>
           <div class="cv-skill">
-            <div class="skill-head mb-3 print:mb-1.5">
+            <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-pen-nib"></i></span>
               <h3 class="text-sm font-semibold">Design</h3>
             </div>
@@ -142,14 +140,14 @@
             </ul>
           </div>
           <div class="cv-skill">
-            <div class="skill-head mb-3 print:mb-1.5">
+            <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-terminal"></i></span>
               <h3 class="text-sm font-semibold">Scripting</h3>
             </div>
             <ul class="cv-chips"><li>JavaScript · base</li></ul>
           </div>
           <div class="cv-skill">
-            <div class="skill-head mb-3 print:mb-1.5">
+            <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-wrench"></i></span>
               <h3 class="text-sm font-semibold">Strumenti</h3>
             </div>
@@ -163,7 +161,7 @@
             </ul>
           </div>
           <div class="cv-skill">
-            <div class="skill-head mb-3 print:mb-1.5">
+            <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-user-pen"></i></span>
               <h3 class="text-sm font-semibold">Metodo</h3>
             </div>
@@ -178,10 +176,10 @@
       </section>
 
       <section aria-labelledby="t-lingue">
-        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; lingue /&gt;</p>
-        <h2 id="t-lingue" class="mt-2 mb-6 font-display text-2xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Lingue</h2>
+        <p class="text-sm text-accent font-semibold">&lt; lingue /&gt;</p>
+        <h2 id="t-lingue" class="mt-2 mb-6 font-display text-2xl font-normal">Lingue</h2>
         <!-- --livello: lunghezza della barra (100% madrelingua, C1 ≈ 83%, B2 ≈ 66%) -->
-        <dl class="space-y-4 print:space-y-2.5">
+        <dl class="space-y-4">
           <div class="cv-lang" style="--livello: 100%"><dt>Italiano</dt><dd>Madrelingua</dd></div>
           <div class="cv-lang" style="--livello: 83%"><dt>Inglese</dt><dd>C1 &middot; certificato EF SET 65/100, 2026</dd></div>
           <div class="cv-lang" style="--livello: 66%"><dt>Spagnolo</dt><dd>B2</dd></div>
@@ -190,47 +188,47 @@
     </aside>
 
     <!-- COLONNA PRINCIPALE -->
-    <div class="space-y-16 print:space-y-6">
+    <div class="space-y-16">
 
       <section aria-labelledby="t-profilo">
-        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; profilo /&gt;</p>
-        <h2 id="t-profilo" class="mt-2 mb-6 font-display text-3xl font-normal print:text-[13pt] print:mb-2 print:mt-0.5">Profilo</h2>
-        <p class="text-lg print:text-[9pt]">
+        <p class="text-sm text-accent font-semibold">&lt; profilo /&gt;</p>
+        <h2 id="t-profilo" class="mt-2 mb-6 font-display text-3xl font-normal">Profilo</h2>
+        <p class="text-lg">
           Front-end Developer e Web Designer con 12 anni di esperienza in agenzia. Trasformo progetti grafici in siti responsive, accessibili e facili da mantenere, unendo competenze di design e sviluppo front-end.
         </p>
-        <p class="mt-4 text-muted print:mt-2 print:text-[9pt]">
+        <p class="mt-4 text-muted">
           Lavoro principalmente con HTML, CSS, Bootstrap e Tailwind CSS, con una solida formazione in graphic design e art direction. Ho realizzato siti aziendali, e-commerce e landing page, collaborando con sviluppatori, SEO specialist e project manager.
         </p>
-        <p class="mt-4 text-muted print:mt-2 print:text-[9pt]">
+        <p class="mt-4 text-muted">
           Utilizzo strumenti di AI come supporto allo sviluppo, mantenendo il controllo sul codice e curandone personalmente rifinitura e qualità.
         </p>
         <!-- Numeri chiave -->
-        <dl class="mt-8 grid grid-cols-3 gap-4 print:mt-3 print:gap-3">
-          <div class="border-l-2 border-accent pl-4 print:pl-3">
-            <dt class="font-display text-4xl text-accent font-normal print:text-[18pt]">12+</dt>
-            <dd class="text-sm text-muted print:text-[8pt]">anni in agenzia</dd>
+        <dl class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
+          <div class="border-l-2 border-accent pl-4">
+            <dt class="font-display text-4xl text-accent font-normal">12+</dt>
+            <dd class="text-sm text-muted">anni in agenzia</dd>
           </div>
-          <div class="border-l-2 border-accent pl-4 print:pl-3">
-            <dt class="font-display text-4xl text-accent font-normal print:text-[18pt]">100+</dt>
-            <dd class="text-sm text-muted print:text-[8pt]">progetti consegnati</dd>
+          <div class="border-l-2 border-accent pl-4">
+            <dt class="font-display text-4xl text-accent font-normal">100+</dt>
+            <dd class="text-sm text-muted">progetti consegnati</dd>
           </div>
-          <div class="border-l-2 border-accent pl-4 print:pl-3">
-            <dt class="font-display text-4xl text-accent font-normal print:text-[18pt]">107<small class="text-muted text-xl print:text-[10pt]">/110</small></dt>
-            <dd class="text-sm text-muted print:text-[8pt]">NABA, Graphic Design</dd>
+          <div class="border-l-2 border-accent pl-4 col-span-2 sm:col-span-1">
+            <dt class="font-display text-4xl text-accent font-normal">107<small class="text-muted text-xl">/110</small></dt>
+            <dd class="text-sm text-muted">NABA, Graphic Design</dd>
           </div>
         </dl>
       </section>
 
       <section aria-labelledby="t-esperienza">
-        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; esperienza /&gt;</p>
-        <h2 id="t-esperienza" class="mt-2 mb-8 font-display text-3xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Esperienza professionale</h2>
+        <p class="text-sm text-accent font-semibold">&lt; esperienza /&gt;</p>
+        <h2 id="t-esperienza" class="mt-2 mb-8 font-display text-3xl font-normal">Esperienza professionale</h2>
         <!-- Timeline: linea verticale col gradiente + pallino per ogni ruolo -->
-        <ol class="cv-timeline space-y-10 print:space-y-4">
+        <ol class="cv-timeline space-y-10">
           <li class="cv-timeline__item">
-            <p class="text-sm text-muted print:text-[8pt]">Gennaio 2015 – Novembre 2026</p>
-            <h3 class="mt-1 font-display text-xl font-medium print:text-[11pt] print:mt-0">Senior Web Designer</h3>
-            <p class="text-sm text-accent font-semibold print:text-[8.5pt]">Italia Multimedia S.r.l.</p>
-            <ul class="cv-bullets mt-4 print:mt-1.5">
+            <p class="text-sm text-muted">Gennaio 2015 – Novembre 2026</p>
+            <h3 class="mt-1 font-display text-xl font-medium">Senior Web Designer</h3>
+            <p class="text-sm text-accent font-semibold">Italia Multimedia S.r.l.</p>
+            <ul class="cv-bullets mt-4">
               <li>Sviluppo front-end di siti web ed e-commerce a partire dai progetti grafici, con HTML, CSS, Bootstrap e Tailwind CSS.</li>
               <li>Oltre <strong>100 progetti consegnati</strong> in 12 anni: siti vetrina, cataloghi, e-commerce e landing page.</li>
               <li>Figura di riferimento per il design dell’agenzia: per lungo tempo unica risorsa grafica interna, responsabile della componente visiva dei progetti.</li>
@@ -240,10 +238,10 @@
             </ul>
           </li>
           <li class="cv-timeline__item">
-            <p class="text-sm text-muted print:text-[8pt]">Luglio 2014 – Gennaio 2015</p>
-            <h3 class="mt-1 font-display text-xl font-medium print:text-[11pt] print:mt-0">Web Designer (stage)</h3>
-            <p class="text-sm text-accent font-semibold print:text-[8.5pt]">Italia Multimedia S.r.l.</p>
-            <ul class="cv-bullets mt-4 print:mt-1.5">
+            <p class="text-sm text-muted">Luglio 2014 – Gennaio 2015</p>
+            <h3 class="mt-1 font-display text-xl font-medium">Web Designer (stage)</h3>
+            <p class="text-sm text-accent font-semibold">Italia Multimedia S.r.l.</p>
+            <ul class="cv-bullets mt-4">
               <li>Supporto alla realizzazione di siti web e materiali grafici digitali.</li>
               <li>Assunzione a tempo indeterminato al termine dello stage.</li>
             </ul>
@@ -252,31 +250,31 @@
       </section>
 
       <section aria-labelledby="t-formazione">
-        <p class="text-sm text-accent font-semibold print:text-[8pt]">&lt; formazione /&gt;</p>
-        <h2 id="t-formazione" class="mt-2 mb-8 font-display text-3xl font-normal print:text-[13pt] print:mb-3 print:mt-0.5">Formazione</h2>
-        <ol class="cv-timeline space-y-8 print:space-y-3">
+        <p class="text-sm text-accent font-semibold">&lt; formazione /&gt;</p>
+        <h2 id="t-formazione" class="mt-2 mb-8 font-display text-3xl font-normal">Formazione</h2>
+        <ol class="cv-timeline space-y-8">
           <li class="cv-timeline__item">
-            <p class="text-sm text-muted print:text-[8pt]">2026</p>
-            <h3 class="mt-1 font-display text-lg font-medium print:text-[10pt] print:mt-0">Corsi online su Learnn</h3>
-            <p class="mt-1 text-muted print:text-[8.5pt] print:mt-0.5">Figma Basics, UI Design, Design System, Web Design con Webflow, JavaScript, AI da Zero, Claude Chat &amp; Cowork</p>
+            <p class="text-sm text-muted">2026</p>
+            <h3 class="mt-1 font-display text-lg font-medium">Corsi online su Learnn</h3>
+            <p class="mt-1 text-muted">Figma Basics, UI Design, Design System, Web Design con Webflow, JavaScript, AI da Zero, Claude Chat &amp; Cowork</p>
           </li>
           <li class="cv-timeline__item">
-            <p class="text-sm text-muted print:text-[8pt]">2014</p>
-            <h3 class="mt-1 font-display text-lg font-medium print:text-[10pt] print:mt-0">Diploma Accademico di I livello in Graphic Design &amp; Art Direction</h3>
-            <p class="mt-1 text-muted print:text-[8.5pt] print:mt-0.5">NABA &middot; voto 107/110 (equipollente a laurea triennale)</p>
+            <p class="text-sm text-muted">2014</p>
+            <h3 class="mt-1 font-display text-lg font-medium">Diploma Accademico di I livello in Graphic Design &amp; Art Direction</h3>
+            <p class="mt-1 text-muted">NABA &middot; voto 107/110 (equipollente a laurea triennale)</p>
           </li>
           <li class="cv-timeline__item">
-            <p class="text-sm text-muted print:text-[8pt]">2010</p>
-            <h3 class="mt-1 font-display text-lg font-medium print:text-[10pt] print:mt-0">Diploma in Ragioneria</h3>
-            <p class="mt-1 text-muted print:text-[8.5pt] print:mt-0.5">ITC Nicola Moreschi</p>
+            <p class="text-sm text-muted">2010</p>
+            <h3 class="mt-1 font-display text-lg font-medium">Diploma in Ragioneria</h3>
+            <p class="mt-1 text-muted">ITC Nicola Moreschi</p>
           </li>
         </ol>
       </section>
     </div>
   </div>
 
-  <!-- CONTATTO (non stampato) -->
-  <section id="contatto" class="contact-hex py-16 sm:py-24 print:hidden">
+  <!-- CONTATTO -->
+  <section id="contatto" class="contact-hex py-10 sm:py-24">
     <div class="mx-auto max-w-5xl px-6">
       <div class="grid gap-8 sm:grid-cols-[1fr_1.6fr] sm:items-end">
         <h2 class="font-display leading-tight" style="font-weight:300; font-size: clamp(2rem, 6vw, 3.5rem);">
@@ -289,7 +287,7 @@
           <div class="flex flex-wrap gap-x-6 gap-y-2">
             <a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a>
             <a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a>
-            <a href="[link-github]" class="link">GitHub</a>
+            <a href="https://github.com/laurapreti" class="link">GitHub</a>
           </div>
         </div>
       </div>
@@ -298,7 +296,7 @@
 
 </main>
 
-<footer class="print:hidden relative after:absolute after:h-0.5 after:w-full after:top-0 after:bg-linear-to-r after:from-glight after:to-gdark">
+<footer class="relative after:absolute after:h-0.5 after:w-full after:top-0 after:bg-linear-to-r after:from-glight after:to-gdark">
   <div class="mx-auto max-w-5xl px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
     <span>&copy; 2026 Laura Preti</span>
     <span>Costruito con HTML e Tailwind CSS</span>
