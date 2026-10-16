@@ -18,7 +18,7 @@
 <link rel="manifest" href="favicon/site.webmanifest">
 <meta name="theme-color" content="#3D1466">
 
-<!-- Anteprima social — [SEGNAPOSTO]: sostituisci https://[DOMINIO] con l'indirizzo vero del sito -->
+<!-- Anteprima social -->
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Laura Preti — Design & Code">
@@ -82,13 +82,13 @@
             style="font-size: clamp(2.6rem, 8vw, 4.8rem);">
           Laura <em class="font-normal">Preti</em>
         </h1>
-        <p class="rise rise-3 mt-4 text-lg text-accent font-semibold">Front-end Developer &middot; Web Designer</p>
+        <p class="rise rise-3 mt-4 text-lg text-accent font-semibold">Web Designer</p>
         <!-- Contatti -->
         <ul class="rise rise-3 mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
           <li>Milano</li>
           <li><a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a></li>
           <li><a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a></li>
-          <li><a href="https://laurapreti.github.io/portfolio/" class="link">GitHub</a></li>
+          <li><a href="https://github.com/laurapreti" class="link">GitHub</a></li>
         </ul>
       </div>
       <!-- Download del CV: il PDF è curato a parte in InDesign (cv-indesign/) -->
@@ -114,37 +114,42 @@
         <div class="space-y-6">
           <div class="cv-skill">
             <div class="skill-head mb-3">
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-laptop-code"></i></span>
+              <h3 class="text-sm font-semibold">Web Design</h3>
+            </div>
+            <ul class="cv-chips">
+              <li>Look and feel</li>
+              <li>Layout responsive</li>
+              <li>Composizione e gerarchia visiva</li>
+              <li>Tipografia</li>
+              <li>Selezione fotografica</li>
+            </ul>
+          </div>
+          <div class="cv-skill">
+            <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
-              <h3 class="text-sm font-semibold">Front-end</h3>
+              <h3 class="text-sm font-semibold">Realizzazione</h3>
             </div>
             <ul class="cv-chips">
               <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Flexbox & Grid</li>
-              <li>Responsive design</li>
+              <li>CSS3 (Flexbox & Grid)</li>
               <li>Bootstrap 3/4/5</li>
               <li>Tailwind CSS</li>
               <li>PHP · base</li>
+              <li>JavaScript · base</li>
+              <li>SEO · base</li>
             </ul>
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
               <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-pen-nib"></i></span>
-              <h3 class="text-sm font-semibold">Design</h3>
+              <h3 class="text-sm font-semibold">Grafica</h3>
             </div>
             <ul class="cv-chips">
               <li>Photoshop</li>
               <li>Illustrator</li>
               <li>InDesign</li>
-              <li>Figma (auto layout, componenti, Dev Mode)</li>
             </ul>
-          </div>
-          <div class="cv-skill">
-            <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-terminal"></i></span>
-              <h3 class="text-sm font-semibold">Scripting</h3>
-            </div>
-            <ul class="cv-chips"><li>JavaScript · base</li></ul>
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
@@ -154,22 +159,19 @@
             <ul class="cv-chips">
               <li>Visual Studio Code</li>
               <li>Claude Code</li>
-              <li>Cowork</li>
               <li>ChatGPT</li>
               <li>Gemini</li>
-              <li>Microsoft Office</li>
             </ul>
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-user-pen"></i></span>
-              <h3 class="text-sm font-semibold">Metodo</h3>
+              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-graduation-cap"></i></span>
+              <h3 class="text-sm font-semibold">In formazione</h3>
             </div>
             <ul class="cv-chips">
-              <li>Design-to-code</li>
-              <li>Cura dei dettagli visivi</li>
-              <li>Collaborazione con sviluppatori</li>
-              <li>AI a supporto del codice</li>
+              <li>Figma</li>
+              <li>UI design</li>
+              <li>Design system</li>
             </ul>
           </div>
         </div>
@@ -181,7 +183,7 @@
         <!-- --livello: lunghezza della barra (100% madrelingua, C1 ≈ 83%, B2 ≈ 66%) -->
         <dl class="space-y-4">
           <div class="cv-lang" style="--livello: 100%"><dt>Italiano</dt><dd>Madrelingua</dd></div>
-          <div class="cv-lang" style="--livello: 83%"><dt>Inglese</dt><dd>C1 &middot; certificato EF SET 65/100, 2026</dd></div>
+          <div class="cv-lang" style="--livello: 83%"><dt>Inglese</dt><dd>C1 &middot; certificato EF SET, 2026</dd></div>
           <div class="cv-lang" style="--livello: 66%"><dt>Spagnolo</dt><dd>B2</dd></div>
         </dl>
       </section>
@@ -194,16 +196,13 @@
         <p class="text-sm text-accent font-semibold">&lt; profilo /&gt;</p>
         <h2 id="t-profilo" class="mt-2 mb-6 font-display text-3xl font-normal">Profilo</h2>
         <p class="text-lg">
-          Front-end Developer e Web Designer con 12 anni di esperienza in agenzia. Trasformo progetti grafici in siti responsive, accessibili e facili da mantenere, unendo competenze di design e sviluppo front-end.
+          Web designer con 12 anni di esperienza in agenzia e oltre 100 siti realizzati per aziende di settori diversi. Scelgo il look and feel più adatto al cliente, compongo le pagine e le realizzo in HTML, CSS, Bootstrap e Tailwind, pronte per essere collegate al back-end.
         </p>
         <p class="mt-4 text-muted">
-          Lavoro principalmente con HTML, CSS, Bootstrap e Tailwind CSS, con una solida formazione in graphic design e art direction. Ho realizzato siti aziendali, e-commerce e landing page, collaborando con sviluppatori, SEO specialist e project manager.
-        </p>
-        <p class="mt-4 text-muted">
-          Utilizzo strumenti di AI come supporto allo sviluppo, mantenendo il controllo sul codice e curandone personalmente rifinitura e qualità.
+          Per molti anni sono stata l'unica figura grafica dell'agenzia: sono abituata a gestire feedback dei clienti e scadenze. Uso l'AI come supporto alla produzione, mantenendo il controllo su resa visiva e qualità del codice. Sto ampliando le mie competenze verso la progettazione UI in Figma.
         </p>
         <!-- Numeri chiave -->
-        <dl class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
+        <dl class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div class="border-l-2 border-accent pl-4">
             <dt class="font-display text-4xl text-accent font-normal">12+</dt>
             <dd class="text-sm text-muted">anni in agenzia</dd>
@@ -222,18 +221,17 @@
       <section aria-labelledby="t-esperienza">
         <p class="text-sm text-accent font-semibold">&lt; esperienza /&gt;</p>
         <h2 id="t-esperienza" class="mt-2 mb-8 font-display text-3xl font-normal">Esperienza professionale</h2>
-        <!-- Timeline: linea verticale col gradiente + pallino per ogni ruolo -->
         <ol class="cv-timeline space-y-10">
           <li class="cv-timeline__item">
-            <p class="text-sm text-muted">Gennaio 2015 – Novembre 2026</p>
-            <h3 class="mt-1 font-display text-xl font-medium">Senior Web Designer</h3>
+            <p class="text-sm text-muted">Gennaio 2015 – Ottobre 2026</p>
+            <h3 class="mt-1 font-display text-xl font-medium">Web Designer</h3>
             <p class="text-sm text-accent font-semibold">Italia Multimedia S.r.l.</p>
             <ul class="cv-bullets mt-4">
-              <li>Sviluppo front-end di siti web ed e-commerce a partire dai progetti grafici, con HTML, CSS, Bootstrap e Tailwind CSS.</li>
-              <li>Oltre <strong>100 progetti consegnati</strong> in 12 anni: siti vetrina, cataloghi, e-commerce e landing page.</li>
-              <li>Figura di riferimento per il design dell’agenzia: per lungo tempo unica risorsa grafica interna, responsabile della componente visiva dei progetti.</li>
-              <li>Introduzione di <strong>Tailwind CSS</strong> nei progetti più recenti per velocizzare e ottimizzare lo sviluppo.</li>
-              <li>Collaborazione con sviluppatori, SEO specialist e project manager su tempi di consegna, performance, usabilità e accessibilità.</li>
+              <li>Look and feel, composizione e realizzazione in HTML/CSS di oltre 100 progetti: siti vetrina, cataloghi B2B, landing e interfacce di configuratori.</li>
+              <li>Per molti anni unica risorsa grafica interna, responsabile della componente visiva di tutti i progetti.</li>
+              <li>Pagine consegnate pronte per lo sviluppo back-end, in collaborazione con sviluppatori, SEO specialist e project manager.</li>
+              <li>Introduzione di Tailwind CSS nei progetti più recenti per velocizzare e ottimizzare lo sviluppo.</li>
+              <li>Workflow con Claude Code per accelerare la produzione, con revisione e rifinitura manuale del codice.</li>
               <li>Formazione e affiancamento di una stagista nel ruolo di Web Designer.</li>
             </ul>
           </li>
@@ -282,12 +280,13 @@
         </h2>
         <div class="space-y-4 text-lg">
           <p class="text-muted max-w-lg">
-            Cerco un ruolo come front-end / UI developer, in sede e ibrido a Milano, o da remoto in tutta Italia.
+            Cerco un ruolo come web designer in agenzia o in un team interno, in sede o ibrido a Milano, oppure da remoto in tutta Italia.
           </p>
           <div class="flex flex-wrap gap-x-6 gap-y-2">
             <a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a>
             <a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a>
             <a href="https://github.com/laurapreti" class="link">GitHub</a>
+            <a href="cv-laura-preti.pdf" download class="link">Scarica il CV</a>
           </div>
         </div>
       </div>
@@ -299,7 +298,7 @@
 <footer class="relative after:absolute after:h-0.5 after:w-full after:top-0 after:bg-linear-to-r after:from-glight after:to-gdark">
   <div class="mx-auto max-w-5xl px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
     <span>&copy; 2026 Laura Preti</span>
-    <span>Costruito con HTML e Tailwind CSS</span>
+    <span>Realizzato con HTML, Tailwind CSS e Claude Code</span>
   </div>
 </footer>
 

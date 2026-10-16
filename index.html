@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Laura Preti — Front-end Developer & Web Designer</title>
-<meta name="description" content="Web designer e front-end developer con 12 anni di esperienza in HTML, CSS, Bootstrap e Tailwind. Portfolio di siti realizzati per clienti reali.">
+<title>Laura Preti — Web Designer | Siti responsive in HTML e Tailwind</title>
+<meta name="description" content="Web designer con 12 anni in agenzia: dalla scelta del look and feel alla realizzazione in HTML, CSS, Bootstrap e Tailwind. Oltre 100 siti per aziende reali.">
 <script>
   try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
@@ -18,11 +18,12 @@
 <link rel="manifest" href="favicon/site.webmanifest">
 <meta name="theme-color" content="#3D1466">
 
+<!-- Anteprima social -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Laura Preti — Design & Code">
-<meta property="og:title" content="Laura Preti — Front-end Developer & Web Designer">
-<meta property="og:description" content="Web designer e front-end developer con 12 anni di esperienza in HTML, CSS, Bootstrap e Tailwind. Portfolio di siti realizzati per clienti reali.">
+<meta property="og:title" content="Laura Preti — Web Designer | Siti responsive in HTML e Tailwind">
+<meta property="og:description" content="Web designer con 12 anni in agenzia: dalla scelta del look and feel alla realizzazione in HTML, CSS, Bootstrap e Tailwind. Oltre 100 siti per aziende reali.">
 <meta property="og:url" content="https://laurapreti.github.io/portfolio/">
 <meta property="og:image" content="https://laurapreti.github.io/portfolio/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -78,29 +79,52 @@
   <!-- HERO -->
   <section class="hero-hex py-10 md:pt-28 md:pb-24">
     <div class="mx-auto max-w-5xl px-6">
-      <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">{front-end developer &amp; web designer}</p>
+      <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">{web designer}</p>
       <h1 class="rise rise-2 font-display leading-[1.05] tracking-[-0.01em] font-extralight"
-          style="font-size: clamp(2.6rem, 8vw, 4.8rem);">
-        Trasformo progetti grafici in siti <em class="font-normal">puliti</em>, responsive e fatti per durare.
+          style="font-size: clamp(2.6rem, 8vw, 4.5rem);">
+          Siti web <em class="font-normal">curati</em> nei dettagli, dalla scelta dello stile al codice.
       </h1>
       <div class="md:flex md:items-center md:justify-between md:gap-10">
         <div>
           <p class="rise rise-3 mt-8 max-w-xl text-lg text-muted">
-            Dodici anni in agenzia a costruire il front-end di siti per clienti reali,
-            con HTML, CSS, Bootstrap e Tailwind. Vengo dalla grafica, quindi parlo
-            la lingua sia dei designer sia degli sviluppatori.
+            Da 12 anni in agenzia realizzo siti per aziende reali. Scelgo il look and feel più adatto al cliente, compongo le pagine e le costruisco direttamente in HTML, CSS, Bootstrap e Tailwind. Vengo dalla grafica: il codice è lo strumento con cui do forma alle idee.
           </p>
           <div class="rise rise-4 mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
             <a href="#lavori"
-              class="inline-flex items-center rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
+              class="inline-flex items-center rounded-full px-5 py-2.5 font-medium transition-transform will-change-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
               Guarda i lavori
             </a>
-            <a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a>
+            <a href="cv-laura-preti.pdf" download
+              class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-medium transition-transform will-change-transform hover:-translate-y-0.5 border border-accent text-ink">
+              <i class="icon-line fa-solid fa-download"></i> Scarica il CV
+            </a>
             <a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a>
           </div>
         </div>
         <div class="hero-badge hidden md:block md:mr-4" aria-hidden="true">
           <img src="logo/kit/badge.svg" alt="" width="120" height="120">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COSA PORTO NEL TEAM -->
+  <section id="approccio" class="py-10 md:py-20 border-b border-line">
+    <div class="mx-auto max-w-5xl px-6">
+      <h2 class="font-display text-3xl sm:text-4xl font-normal mb-3">Cosa porto nel team</h2>
+      <p class="text-muted max-w-2xl mb-10">Non solo un sito che funziona, ma un sito curato nell'aspetto e già pronto per essere reso dinamico.</p>
+      <div class="grid gap-5 md:grid-cols-3">
+        <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
+          <p class="font-sans text-sm text-accent mb-4 font-semibold">&lt; pagine_pronte /&gt;</p>
+          <p>Realizzo le pagine direttamente in HTML o PHP, responsive e rifinite. Gli sviluppatori le collegano al back-end senza dover reinterpretare un mockup.</p>
+        </div>
+        <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
+          <p class="font-sans text-sm text-accent mb-4 font-semibold">&lt; direzione_visiva /&gt;</p>
+          <p>Parto da una base adatta al settore e la trasformo nell'identità del cliente: tipografia, palette, composizione delle pagine e scelta delle fotografie.</p>
+        </div>
+        <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
+          <p class="font-sans text-sm text-accent mb-4 font-semibold">&lt; ai_con_metodo /&gt;</p>
+          <p>Uso l'AI per accelerare la produzione. La direzione visiva, la revisione del codice e il controllo finale restano miei.</p>
         </div>
       </div>
     </div>
@@ -112,6 +136,7 @@
       <div class="grid gap-5 md:grid-cols-[1fr_1.6fr]">
         <div class="md:sticky md:top-24 md:self-start mb-8 md:mb-0">
           <h2 class="font-display text-3xl sm:text-4xl font-normal">Profilo</h2>
+          <p class="mt-2 text-muted">L'equilibrio tra forma e struttura</p>
           <dl class="grid gap-x-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-1 mb-8">
             <div class="mt-8 md:mt-14">
               <dt class="font-display text-4xl sm:text-5xl text-accent font-normal">12+</dt>
@@ -134,15 +159,15 @@
         <div class="space-y-5 text-base max-w-2xl">
           <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
             <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; chi_sono /&gt;</p>
-            <p>Sono una web designer con 12 anni di esperienza in agenzia. Mi occupo di tradurre i progetti grafici in siti responsive, accessibili e facili da mantenere, curando tipografia, layout e coerenza visiva.</p>
+            <p>Sono una web designer con 12 anni di esperienza in agenzia. Mi occupo dell'aspetto e della costruzione dei siti: definisco lo stile, compongo le pagine e le realizzo in codice, curando tipografia, spazi e coerenza visiva.</p>
           </div>
           <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
             <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; in_agenzia /&gt;</p>
-            <p>Ho realizzato più di 100 siti per clienti di settori diversi e per molti anni sono stata l'unica figura grafica dell'agenzia: ogni progetto passava da me. Ho anche formato una stagista nel mio stesso ruolo.</p>
+            <p>Ho realizzato più di 100 siti per aziende di settori diversi: siti vetrina, cataloghi B2B, landing e interfacce di configuratori. Per molti anni sono stata l'unica figura grafica dell'agenzia, quindi ogni progetto passava da me, dai feedback del cliente alle scadenze. Ho anche formato una stagista nel mio ruolo.</p>
           </div>
           <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
             <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; formazione /&gt;</p>
-            <p>Uso l'AI per velocizzare la produzione dei componenti, che poi rivedo e rifinisco a mano. Ho una formazione in Graphic Design e Art Direction (NABA - 2014, 107/110) e nel 2026 ho seguito corsi su Figma, UI Design, Design System, Webflow e JavaScript.</p>
+            <p>Ho un Diploma Accademico in Graphic Design e Art Direction (NABA, 2014, 107/110). Mi tengo aggiornata seguendo corsi su Figma, UI Design, Design System, Webflow e JavaScript, per portare il mio lavoro anche sulla progettazione prima del codice.</p>
           </div>
           <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
             <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; oltre_il_lavoro /&gt;</p>
@@ -174,13 +199,12 @@
               <span>Landing &middot; Tailwind CSS</span>
             </div>
             <h3 class="font-display text-2xl sm:text-3xl mb-3 font-normal">Dalla Corte — 25 Anni</h3>
-            <p class="mb-3 max-w-md">
+            <p class="mb-1 max-w-md">
               Progetto per Italia Multimedia
             </p>
+            <p class="mb-3 max-w-md text-sm"><span class="text-accent font-semibold">ruolo:</span> impostazione grafica e front-end</p>
             <p class="text-muted mb-5 max-w-md">
-              Landing narrativa a capitoli per l'anniversario del produttore di macchine
-              per espresso: sei lingue, video e gallery. Grafica e front-end in Tailwind,
-              costruiti con il supporto di Claude Code e rifiniti a mano.
+              Landing narrativa a capitoli per i 25 anni del produttore di macchine per espresso. Ho impostato la grafica a partire dai materiali del cliente e ho costruito la pagina in Tailwind con il supporto di Claude Code, curando ritmo delle sezioni, video, gallery e resa su mobile.
             </p>
             <div class="flex gap-x-5 gap-y-2 text-sm content-center">
               <a href="case-dalla-corte.html" class="inline-flex items-center rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">Caso studio</a>
@@ -200,13 +224,12 @@
               <span>Sito &amp; configuratore &middot; Bootstrap 5</span>
             </div>
             <h3 class="font-display text-2xl sm:text-3xl mb-3 font-normal">RevoSteel Building</h3>
-            <p class="mb-3 max-w-md">
+            <p class="mb-1 max-w-md">
               Progetto per Italia Multimedia
             </p>
+            <p class="mb-3 max-w-md text-sm"><span class="text-accent font-semibold">ruolo:</span> look and feel, layout del sito e interfaccia del configuratore</p>
             <p class="text-muted mb-5 max-w-md">
-              Sito e configuratore per un'impresa di case in acciaio CFS, cresciuto per
-              step in circa tre anni. Layout dell'intero sito e interfaccia del
-              configuratore, con feedback continuo del cliente.
+              Sito e configuratore per un'impresa di case in acciaio, cresciuto per step in circa tre anni. Ho dato una forma leggibile a un'offerta tecnica complessa, mantenendo il sito coerente a ogni nuova sezione.
             </p>
             <div class="flex gap-x-5 gap-y-2 text-sm">
               <a href="case-revosteel.html" class="inline-flex items-center rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">Caso studio</a>
@@ -226,13 +249,12 @@
               <span>Sito catalogo B2B &middot; Bootstrap 5</span>
             </div>
             <h3 class="font-display text-2xl sm:text-3xl mb-3 font-normal">Due Emme (2M)</h3>
-            <p class="mb-3 max-w-md">
+            <p class="mb-1 max-w-md">
               Progetto per Italia Multimedia
             </p>
+            <p class="mb-3 max-w-md text-sm"><span class="text-accent font-semibold">ruolo:</span> layout, riorganizzazione del catalogo e front-end</p>
             <p class="text-muted mb-5 max-w-md">
-              Rifacimento del sito di un produttore di accessori termoplastici, partendo
-              da un vecchio WordPress. Ho mantenuto lo stile che piaceva alla cliente,
-              riordinando categorie e settori per una navigazione più chiara.
+              Rifacimento del sito di un produttore di accessori termoplastici. Ho mantenuto lo stile che la cliente apprezzava e riordinato 16 categorie e 8 settori, per rendere più immediata la consultazione B2B.
             </p>
             <div class="flex gap-x-5 gap-y-2 text-sm">
               <a href="case-due-emme.html" class="inline-flex items-center rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">Caso studio</a>
@@ -252,13 +274,12 @@
               <span>Sito &middot; Bootstrap 5</span>
             </div>
             <h3 class="font-display text-2xl sm:text-3xl mb-3 font-normal">Castello di Jerago</h3>
-            <p class="mb-3 max-w-md">
+            <p class="mb-1 max-w-md">
               Progetto per Italia Multimedia
             </p>
+            <p class="mb-3 max-w-md text-sm"><span class="text-accent font-semibold">ruolo:</span> layout e front-end</p>
             <p class="text-muted mb-5 max-w-md">
-              Location per matrimoni ed eventi seguita in tre versioni del sito, dallo
-              stage a oggi. L'ultimo ridisegno in chiave premium usa Bootstrap 5 e
-              flexbox, con versione inglese completa e forte peso della fotografia.
+              Dimora storica per matrimoni ed eventi. Con l'ultimo ridisegno ho portato il sito verso un'immagine premium, con la fotografia al centro e la versione inglese completa.
             </p>
             <div class="flex gap-x-5 gap-y-2 text-sm">
               <a href="case-castello-jerago.html" class="inline-flex items-center rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">Caso studio</a>
@@ -308,12 +329,23 @@
         <div class="skill-group">
           <div class="skill-head mb-5">
             <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
-            <h3 class="text-sm text-accent font-semibold">Front-end</h3>
+            <h3 class="text-sm text-accent font-semibold">Web design</h3>
           </div>
           <ul class="skill-list space-y-2 text-lg">
-            <li><i class="skill-icon icon-line fa-brands fa-html5"></i>HTML5</li>
-            <li><i class="skill-icon icon-line fa-brands fa-css3-alt"></i>CSS3 — Flexbox &amp; Grid</li>
+            <li><i class="skill-icon icon-line fa-solid fa-swatchbook"></i>Scelta e adattamento del look and feel</li>
+            <li><i class="skill-icon icon-line fa-solid fa-pager"></i>Composizione delle pagine e gerarchia visiva</li>
+            <li><i class="skill-icon icon-line fa-solid fa-text-height"></i>Tipografia e selezione fotografica</li>
             <li><i class="skill-icon icon-line fa-solid fa-computer"></i>Layout responsive</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-head mb-5">
+            <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
+            <h3 class="text-sm text-accent font-semibold">Realizzazione</h3>
+          </div>
+          <ul class="skill-list space-y-2 text-lg">
+            <li><i class="skill-icon icon-line fa-brands fa-html5"></i>HTML5 semantico</li>
+            <li><i class="skill-icon icon-line fa-brands fa-css3-alt"></i>CSS3 (Flexbox &amp; Grid)</li>
             <li><i class="skill-icon icon-line fa-brands fa-bootstrap"></i>Bootstrap 3 / 4 / 5</li>
             <li><i class="skill-icon icon-line fa-brands fa-tailwind-css"></i>Tailwind CSS</li>
             <li><i class="skill-icon icon-line fa-brands fa-php"></i>PHP di base</li>
@@ -324,27 +356,15 @@
         <div class="skill-group">
           <div class="skill-head mb-5">
             <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-pen-nib"></i></span>
-            <h3 class="text-sm text-accent font-semibold">Design</h3>
-          </div>
-          <ul class="skill-list space-y-2 text-lg">
-            <li><i class="skill-icon icon-line fa-brands fa-figma"></i>Figma — auto layout, componenti, Dev Mode</li>
-            <li><i class="skill-icon icon-line fa-regular fa-images"></i>Adobe Photoshop</li>
-            <li><i class="skill-icon icon-line fa-solid fa-bezier-curve"></i>Adobe Illustrator</li>
-            <li><i class="skill-icon icon-line fa-solid fa-table-columns"></i>Adobe InDesign</li>
-            <li><i class="skill-icon icon-line fa-solid fa-laptop-code"></i>Design-to-code</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <div class="skill-head mb-5">
-            <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-wrench"></i></span>
-            <h3 class="text-sm text-accent font-semibold">Strumenti &amp; metodo</h3>
+            <h3 class="text-sm text-accent font-semibold">Strumenti</h3>
           </div>
           <ul class="skill-list space-y-2 text-lg">
             <li><i class="skill-icon icon-line fa-brands fa-visual-studio"></i>Visual Studio Code</li>
-            <li><i class="skill-icon icon-line fa-brands fa-windows"></i>Microsoft Office</li>
-            <li><i class="skill-icon icon-line fa-brands fa-claude"></i>AI a supporto del codice</li>
-            <li><i class="skill-icon icon-line fa-solid fa-people-group"></i>Collaborazione con sviluppatori e clienti</li>
-            <li><i class="skill-icon icon-line fa-solid fa-magnifying-glass-plus"></i>Cura dei dettagli visivi</li>
+            <li><i class="skill-icon icon-line fa-regular fa-images"></i>Adobe Photoshop</li>
+            <li><i class="skill-icon icon-line fa-solid fa-bezier-curve"></i>Adobe Illustrator</li>
+            <li><i class="skill-icon icon-line fa-solid fa-table-columns"></i>Adobe InDesign</li>
+            <li><i class="skill-icon icon-line fa-brands fa-claude"></i>Claude Code e altri strumenti AI</li>
+            <li><i class="skill-icon icon-line fa-brands fa-figma"></i>Figma (in formazione)</li>
           </ul>
         </div>
       </div>
@@ -360,12 +380,13 @@
         </h2>
         <div class="space-y-4 text-lg">
           <p class="text-muted max-w-lg">
-            Cerco un ruolo come front-end / UI developer, in sede e ibrido a Milano, o da remoto in tutta Italia.
+            Cerco un ruolo come web designer in agenzia o in un team interno, in sede o ibrido a Milano, oppure da remoto in tutta Italia.
           </p>
           <div class="flex flex-wrap gap-x-6 gap-y-2">
             <a href="mailto:laurapreti.webdesign@gmail.com" class="link">laurapreti.webdesign@gmail.com</a>
             <a href="https://www.linkedin.com/in/laura-preti-web-designer/" target="_blank" class="link">LinkedIn</a>
             <a href="https://github.com/laurapreti" class="link">GitHub</a>
+            <a href="cv-laura-preti.pdf" download class="link">Scarica il CV</a>
           </div>
         </div>
       </div>
@@ -377,7 +398,7 @@
 <footer class="relative after:absolute after:h-0.5 after:w-full after:top-0 after:bg-linear-to-r after:from-glight after:to-gdark">
   <div class="mx-auto max-w-5xl px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-muted">
     <span>&copy; 2026 Laura Preti</span>
-    <span>Costruito con HTML e Tailwind CSS</span>
+    <span>Realizzato con HTML, Tailwind CSS e Claude Code</span>
   </div>
 </footer>
 
