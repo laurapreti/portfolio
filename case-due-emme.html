@@ -32,9 +32,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- Font: caricati senza bloccare la prima visualizzazione (media="print" → "all" a caricamento finito) -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap"></noscript>
 
-<script src="https://kit.fontawesome.com/9b4d0a581f.js" crossorigin="anonymous"></script>
 
 <!-- Stili comuni a tutte le pagine: si modificano in css/input.css (npm run dev rigenera output.css) -->
 <link rel="stylesheet" href="css/output.css">
@@ -62,8 +64,8 @@
       <!-- Interruttore tema chiaro/scuro -->
       <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Tema scuro" title="Cambia tema">
         <span class="theme-toggle__knob" aria-hidden="true"></span>
-        <i class="theme-toggle__icon theme-toggle__sun text-xs fa-solid fa-sun"></i>
-        <i class="theme-toggle__icon theme-toggle__moon text-xs fa-solid fa-moon"></i>
+        <svg class="svg-inline--fa theme-toggle__icon theme-toggle__sun text-xs" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-sun"/></svg>
+        <svg class="svg-inline--fa theme-toggle__icon theme-toggle__moon text-xs" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-moon"/></svg>
       </button>
       
       <button type="button" class="menu-toggle nav:hidden" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
@@ -79,7 +81,7 @@
   <section class="hero-hex flow-root pt-10 md:pt-20">
     <div class="mx-auto max-w-5xl px-6">
       <a href="index.html#lavori" class="rise rise-1 inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors mb-10">
-        <i class="w-4 h-4 icon-line fa-solid fa-arrow-left"></i>Tutti i lavori
+        <svg class="svg-inline--fa w-4 h-4 icon-line" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-arrow-left"/></svg>Tutti i lavori
       </a>
       <p class="rise rise-1 font-sans text-sm text-accent mb-6 font-semibold">&lt; caso_studio /&gt;</p>
       <h1 class="rise rise-2 font-display leading-[1.05] tracking-[-0.01em] font-extralight"
@@ -93,12 +95,12 @@
         <a href="https://www.2m-italia.it" target="_blank" rel="noopener"
           class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
           Visita il sito
-          <i class="w-4 h-4 icon-line fa-solid fa-arrow-up-right-from-square"></i>
+          <svg class="svg-inline--fa w-4 h-4 icon-line" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-arrow-up-right-from-square"/></svg>
         </a>
         <span class="text-muted">2024 &middot; Sito catalogo B2B &middot; Bootstrap 5</span>
       </div>
       
-      <img src="img/2m/mockup-2m.png" alt="Due Emme (2M)" width="1600" height="853" class="rise rise-4 mt-12 md:mt-16 -mb-24 md:-mb-40 rounded-2xl w-full h-auto">
+      <img src="img/2m/mockup-2m-800.webp" srcset="img/2m/mockup-2m-800.webp 800w, img/2m/mockup-2m-1200.webp 1200w, img/2m/mockup-2m-1600.webp 1600w" sizes="(min-width: 1024px) 976px, calc(100vw - 48px)" fetchpriority="high" alt="Due Emme (2M)" width="1600" height="853" class="rise rise-4 mt-12 md:mt-16 -mb-24 md:-mb-40 rounded-2xl w-full h-auto">
     </div>
   </section>
 
@@ -157,9 +159,9 @@
           <div class="border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-card">
             <p class="text-sm text-accent mb-6 font-semibold">&lt; il_mio_ruolo /&gt;</p>
             <ul class="skill-list space-y-4">
-              <li><i class="skill-icon icon-line fa-solid fa-list-ul"></i><span>Riorganizzazione di categorie e settori per una navigazione più chiara.</span></li>
-              <li><i class="skill-icon icon-line fa-solid fa-display"></i><span>Look and feel, composizione delle pagine e versione responsive.</span></li>
-              <li><i class="skill-icon icon-line fa-solid fa-comments"></i><span>Gestione dei feedback della cliente durante la realizzazione.</span></li>
+              <li><svg class="svg-inline--fa skill-icon icon-line" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-list-ul"/></svg><span>Riorganizzazione di categorie e settori per una navigazione più chiara.</span></li>
+              <li><svg class="svg-inline--fa skill-icon icon-line" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-display"/></svg><span>Look and feel, composizione delle pagine e versione responsive.</span></li>
+              <li><svg class="svg-inline--fa skill-icon icon-line" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-comments"/></svg><span>Gestione dei feedback della cliente durante la realizzazione.</span></li>
             </ul>
             <p class="mt-6 pt-5 border-t border-line text-sm text-muted">L'area riservata e il catalogo scaricabile in PDF non rientrano nel mio lavoro su questo progetto.</p>
           </div>
@@ -170,7 +172,7 @@
 
   <section class="pb-10 md:pb-24">
     <div class="mx-auto max-w-5xl px-6">
-      <img src="img/2m/mockup-2m-scheda.png" alt="Due Emme (2M) — Scheda prodotto" width="1600" height="853" class="rise rise-4 w-full h-auto">
+      <img src="img/2m/mockup-2m-scheda-800.webp" srcset="img/2m/mockup-2m-scheda-800.webp 800w, img/2m/mockup-2m-scheda-1200.webp 1200w, img/2m/mockup-2m-scheda-1600.webp 1600w" sizes="(min-width: 1024px) 976px, calc(100vw - 48px)" loading="lazy" decoding="async" alt="Due Emme (2M) — Scheda prodotto" width="1600" height="853" class="rise rise-4 w-full h-auto">
     </div>
   </section>
 
@@ -185,28 +187,28 @@
         <div class="space-y-5 max-w-2xl">
           <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
             <div class="skill-head mb-4">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-brush"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 384 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-brush"/></svg></span>
               <h3 class="font-display text-xl font-medium">Rinnovare senza perdere l'identità</h3>
             </div>
             <p class="text-muted">Ho mantenuto i tratti dello stile che la cliente apprezzava, ricostruendoli su una base Bootstrap più moderna e adattata a questo obiettivo.</p>
           </article>
           <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
             <div class="skill-head mb-4">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-clipboard-list"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 384 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-clipboard-list"/></svg></span>
               <h3 class="font-display text-xl font-medium">Un catalogo più facile da consultare</h3>
             </div>
             <p class="text-muted">Ho riordinato le 16 categorie di prodotto e gli 8 settori, così chi arriva dal proprio settore trova subito gli accessori pertinenti.</p>
           </article>
           <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
             <div class="skill-head mb-4">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-code"/></svg></span>
               <h3 class="font-display text-xl font-medium">Pagine composte in codice</h3>
             </div>
             <p class="text-muted">Home, catalogo e schede prodotto, settori e pagine istituzionali, realizzate direttamente in HTML e rifinite su mobile.</p>
           </article>
           <article class="skill-group border-l-2 border-accent py-6 px-8 rounded-2xl shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none bg-paper">
             <div class="skill-head mb-4">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-globe"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-globe"/></svg></span>
               <h3 class="font-display text-xl font-medium">Dopo la messa online</h3>
             </div>
             <p class="text-muted">Ho ricollegato gli articoli del blog: italiano e inglese erano pagine separate e sono diventati traduzioni della stessa pagina, con un lungo lavoro di inserimento dati.</p>
@@ -219,20 +221,20 @@
   <section class="py-10 md:py-24">
     <div class="mx-auto max-w-5xl px-6 space-y-5">
       <a href="img/2m/screen-2m_1600x1000.jpg" data-lightbox="due-emme" class="lightbox-thumb">
-        <img src="img/2m/screen-2m_1600x1000.jpg" alt="Due Emme (2M) — Categoria desktop" width="1600" height="1000" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+        <img src="img/2m/screen-2m_1600x1000.jpg" loading="lazy" decoding="async" alt="Due Emme (2M) — Categoria desktop" width="1600" height="1000" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
       </a>
       <div class="grid gap-5 grid-cols-2 md:grid-cols-4">
         <a href="img/2m/screen-2m-prodotti_778x1684.jpg" data-lightbox="due-emme" class="lightbox-thumb">
-          <img src="img/2m/screen-2m-prodotti_778x1684.jpg" alt="Due Emme (2M) — Prodotti mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+          <img src="img/2m/screen-2m-prodotti_778x1684.jpg" loading="lazy" decoding="async" alt="Due Emme (2M) — Prodotti mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
         </a>
         <a href="img/2m/screen-2m-categoria_778x1684.jpg" data-lightbox="due-emme" class="lightbox-thumb">
-          <img src="img/2m/screen-2m-categoria_778x1684.jpg" alt="Due Emme (2M) — Categoria mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+          <img src="img/2m/screen-2m-categoria_778x1684.jpg" loading="lazy" decoding="async" alt="Due Emme (2M) — Categoria mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
         </a>
         <a href="img/2m/screen-2m-chi-siamo_778x1684.jpg" data-lightbox="due-emme" class="lightbox-thumb">
-          <img src="img/2m/screen-2m-chi-siamo_778x1684.jpg" alt="Due Emme (2M) — Chi siamo mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+          <img src="img/2m/screen-2m-chi-siamo_778x1684.jpg" loading="lazy" decoding="async" alt="Due Emme (2M) — Chi siamo mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
         </a>
         <a href="img/2m/screen-2m-come-lavoriamo_778x1684.jpg" data-lightbox="due-emme" class="lightbox-thumb">
-          <img src="img/2m/screen-2m-come-lavoriamo_778x1684.jpg" alt="Due Emme (2M) — Come lavoriamo mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
+          <img src="img/2m/screen-2m-come-lavoriamo_778x1684.jpg" loading="lazy" decoding="async" alt="Due Emme (2M) — Come lavoriamo mobile" width="778" height="1684" class="rise rise-4 rounded-2xl w-full h-auto border-b-2 border-accent shadow-[3px_3px_5px_-3px_rgba(0,0,0,0.25)] dark:shadow-none">
         </a>
       </div>
     </div>
@@ -264,7 +266,7 @@
           <span class="block text-sm text-accent mb-2 font-semibold">&lt; prossimo_caso /&gt;</span>
           <span class="font-display text-2xl sm:text-3xl font-normal">Castello di Jerago</span>
         </span>
-        <i class="w-8 h-8 shrink-0 text-2xl icon-line text-accent transition-transform group-hover:translate-x-1 fa-solid fa-arrow-right"></i>
+        <svg class="svg-inline--fa w-8 h-8 shrink-0 text-2xl icon-line text-accent transition-transform group-hover:translate-x-1" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-arrow-right"/></svg>
       </a>
     </div>
   </section>

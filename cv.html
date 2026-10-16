@@ -32,9 +32,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- Font: caricati senza bloccare la prima visualizzazione (media="print" → "all" a caricamento finito) -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap"></noscript>
 
-<script src="https://kit.fontawesome.com/9b4d0a581f.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="css/output.css">
 
@@ -48,7 +50,7 @@
   <nav class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
     <a href="index.html" class="flex items-center shrink-0">
       <img src="logo/kit/logo-badge-orizzontale.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-light h-16 w-auto">
-      <img src="logo/kit/logo-badge-orizzontale-negativo.svg" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-dark h-16 w-auto">
+      <img src="logo/kit/logo-badge-orizzontale-negativo.svg" fetchpriority="high" alt="Laura Preti — design &amp; code" width="430" height="140" class="logo-dark h-16 w-auto">
     </a>
     <div class="flex items-center gap-3 nav:gap-6">
       <div class="hidden nav:flex items-center gap-7 text-sm text-muted" data-menu-links>
@@ -61,8 +63,8 @@
       <!-- Interruttore tema chiaro/scuro -->
       <button type="button" class="theme-toggle" role="switch" aria-checked="false" aria-label="Tema scuro" title="Cambia tema">
         <span class="theme-toggle__knob" aria-hidden="true"></span>
-        <i class="theme-toggle__icon theme-toggle__sun text-xs fa-solid fa-sun"></i>
-        <i class="theme-toggle__icon theme-toggle__moon text-xs fa-solid fa-moon"></i>
+        <svg class="svg-inline--fa theme-toggle__icon theme-toggle__sun text-xs" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-sun"/></svg>
+        <svg class="svg-inline--fa theme-toggle__icon theme-toggle__moon text-xs" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-moon"/></svg>
       </button>
       
       <button type="button" class="menu-toggle nav:hidden" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
@@ -96,7 +98,7 @@
         <a href="cv-laura-preti.pdf" download
           class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-medium transition-transform hover:-translate-y-0.5 bg-linear-to-br from-glight to-gdark text-white">
           Scarica il CV in PDF
-          <i class="w-4 h-4 icon-line fa-solid fa-arrow-down"></i>
+          <svg class="svg-inline--fa w-4 h-4 icon-line" viewBox="0 0 384 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-arrow-down"/></svg>
         </a>
       </div>
     </div>
@@ -114,7 +116,7 @@
         <div class="space-y-6">
           <div class="cv-skill">
             <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-laptop-code"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 640 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-laptop-code"/></svg></span>
               <h3 class="text-sm font-semibold">Web Design</h3>
             </div>
             <ul class="cv-chips">
@@ -127,7 +129,7 @@
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-code"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-code"/></svg></span>
               <h3 class="text-sm font-semibold">Realizzazione</h3>
             </div>
             <ul class="cv-chips">
@@ -142,7 +144,7 @@
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-pen-nib"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 512 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-pen-nib"/></svg></span>
               <h3 class="text-sm font-semibold">Grafica</h3>
             </div>
             <ul class="cv-chips">
@@ -153,7 +155,7 @@
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-wrench"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-wrench"/></svg></span>
               <h3 class="text-sm font-semibold">Strumenti</h3>
             </div>
             <ul class="cv-chips">
@@ -165,7 +167,7 @@
           </div>
           <div class="cv-skill">
             <div class="skill-head mb-3">
-              <span class="skill-badge" aria-hidden="true"><i class="icon-line fa-solid fa-graduation-cap"></i></span>
+              <span class="skill-badge" aria-hidden="true"><svg class="svg-inline--fa icon-line" viewBox="0 0 576 512" aria-hidden="true"><use href="img/fa-icons.svg#fa-graduation-cap"/></svg></span>
               <h3 class="text-sm font-semibold">In formazione</h3>
             </div>
             <ul class="cv-chips">
